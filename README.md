@@ -5,12 +5,12 @@ A single-page, one-column resume for software developers. It uses the base latex
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
+docker run --rm -i -v "$PWD":/data latex pdflatex Shyam_Resume.tex
 ```
 
 ### Preview
 
-![Resume Screenshot](/resume_preview.png)
+![Resume Screenshot](/Shyam_Resume.png)
 
 
 ### Steps
@@ -21,4 +21,8 @@ docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
 docker build -t latex .
 docker run --rm -i -v "$PWD":/data latex pdflatex Shyam_Resume.tex
 
-4. Done
+4. Download the resume
+
+### Credits/Reference
+
+https://github.com/sb2nov/resume
