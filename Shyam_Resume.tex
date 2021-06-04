@@ -1,0 +1,216 @@
+%-------------------------
+  % Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+  
+  \documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+  % Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+    }
+  }
+  
+  \newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-5pt}
+      }
+      
+      \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+        
+        \renewcommand{\labelitemii}{$\circ$}
+        
+        \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+        \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+        \newcommand{\resumeItemListStart}{\begin{itemize}}
+        \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+        
+        %-------------------------------------------
+          %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          
+          
+          \begin{document}
+        
+        %----------HEADING-----------------
+          \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{\href{http://shyambv.com/}{\Large Shyam BV}} & Email : \href{mailto:shyambv86@gmail.com}{shyambv86@gmail.com}\\
+        \href{https://www.linkedin.com/in/shyambv/}{Linkedin}/\href{https://bvshyam.medium.com/}{Medium}/\href{https://github.com/bvshyam}{Github}/\href{https://shyambv.com}{Website} & Mobile : +1-908-838-8800 \\
+        \end{tabular*}
+        
+        
+        %-----------EDUCATION-----------------
+          \section{Education}
+        \resumeSubHeadingListStart
+        \resumeSubheading
+        {City University of New York}{New York, NY}
+        {Master in Data Science;  GPA: 4.00}{}
+        \resumeSubheading
+        {Anna University}{Chennai, India}
+        {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.43}{}
+        \resumeSubheading
+        {National Institute of Information Technology}{Trichy, India}
+        {Diploma in in Information Technology;}{}
+        \resumeSubHeadingListEnd
+
+        %-----------EXPERIENCE-----------------
+          \section{Experience}
+        \resumeSubHeadingListStart
+        \resumeSubheading
+        {Equifax - Data Scientist}{Atlanta, GA}
+        {Customer facing Data Scientist}{Sep 2018 - Present}
+                 \resumeItemListStart
+        \resumeItem{Identity and Fraud - Attributes and Models}
+        {Creating fraud attributes using PII's and models using the attributes.}
+        \resumeItem{Identity and Fraud - Graph}
+        {Created graph attributes to find fraudulent accounts using PII's in Equifax and execute it large scale.}
+%         \resumeItem{Creating models/scores}
+%         {Created models on propensity to buy and scoring for customers using Equifax dataset}
+%          \resumeItemListEnd
+        \resumeItem{Ignite Direct - Models}
+        {Helping Equifax customers to solve their analytics use cases with various Equifax data assets. Created models on propensity to buy and scoring for customers.}
+         \resumeItemListEnd
+
+        \resumeSubheading
+        {Multidimensions - Self-employment }{Atlanta, GA}
+        {Solopreneur}{Feb 2020 - Present}
+         \resumeItemListStart
+          \resumeItem{Code Sprout}
+        {A medium and substack blog to publish different articles on applications of code.}
+        \resumeItem{Socialimageai.com}
+        {AI marketing product for startups to create social media posts, articles from website or context using GPT-2, image recognition }
+        \resumeItem{Sproutquik.xyz - Retired}
+        {Created a product for startups to get up and run quickly. Similar to AWS amplify. Platform is built using terrafrom and AWS. }
+         \resumeItem{Buildtheresume.com}
+        {Product to create professional resume using OpenAI GPT-3 to create resume and perform resume QA using sentiment and transformer models. }
+        
+        \resumeItem{tradeslybot.com - Retired}
+        {Customer facing chatbot via social media channels(Whatsapp, FB, Telegram) to trade and provide information on Stocks. }
+         \resumeItemListEnd
+
+
+        \resumeSubheading
+        {Deutsche Bank - Data Scientist}{Cary, NC}
+        {Assistant Vice President}{Sep 2014 - Sep 2018}
+        \resumeItemListStart
+        \resumeItem{Fraud Detection}
+        {Replacing the existing rule-based system by analytics application to perform anomaly and fraud detection in the retail banking. Created models(parametric/non-parametric) and architect the
+complete pipeline for the real-time application.}
+        \resumeItem{Texas Oil Estimation}
+        {Created seasonal estimation models using ARIMA/Prophet/Neural Networks to predict
+the output in Texas oil wells and provide recommendations.}
+                \resumeItem{COE - QA system}
+        {Created QA(Chatbot) using Deep learning toolkit to address the common questions in
+Center of Excellence team.}
+                \resumeItem{Internal Documents classification}
+        {Classified Deutsche Bank internal document classification from Enterprise
+content management system using ensemble models and Neural networks.}
+                \resumeItem{Credit/Operational Risk}
+        {Developed credit/operational risk-based models and building a data pipeline using
+Cloudera data science workbench. Also, migrated existing SAS based risk models to pyspark.}
+        \resumeItemListEnd
+        
+        \resumeSubheading
+        {Tata Consultancy Services - Sr. Data Analyst}{Edison, NJ}
+        {AIG - Consultant}{Mar 2011 - Sep 2014}
+        \resumeItemListStart
+        \resumeItem{ISG Cost Containment}
+        {Performed various data analysis/mining activities and expenses by applications.
+Created models to predict the risk and expected over-expenses.}
+        \resumeItem{DWFIT}
+        {Worked as a Data Engineer to build data pipelines for an enterprise-wide Financial Information
+Transparency Data warehousing system on Hadoop.}
+        \resumeItem{Financial Information Transparency Budgeting}
+        {Performed data analyst role by creating different forecast/budgeting cost-based models.}
+  \resumeItemListEnd
+  
+        \resumeSubheading
+        {Sensiple Softwares - System engineer}{}
+        {Data Engineer}{Jul 2008 - Mar 2011}
+        \resumeItemListStart
+        \resumeItem{West Connect}
+        {Performed analysis of voice metrics analysis and created various KPI's and metrics with Business
+intelligence tools.}
+        \resumeItem{Mileage Plus}
+        {Performed ETL transformations on the mileage plus voice application from transactional to OLAP
+database.}
+        \resumeItem{Katana}
+        {Worked on an OTC bond market trading application using core Java. It is a real-time trading application for banks and brokers.}
+
+        \resumeItemListEnd
+        \resumeSubHeadingListEnd
+        
+        
+        %-----------Technical Skills-----------------
+          \section{Technical Skills}
+        \resumeSubHeadingListStart
+        \resumeSubItem{Programming/Scripting}
+        {Python, Java Script, Web Development, PLSQL}
+        \resumeSubItem{ML}
+        {Pytorch, Computer Vision, NLP, Machine Learning, Deep Learning, SparkML, H2O}
+        \resumeSubItem{Data Engineering/DevOps}
+        {Terraform, Hadoop, PySpark, Docker, Cloudera Data Science Workbench, CICD, AWS, GCP}
+        \resumeSubItem{Visualizations/Databases}
+        {Tableau, Qlikivew, BO, Cognos, Neo4j, Oracle, AWS DynamoDB}
+        \resumeSubItem{Stat/Math/Others}
+        {Statistical analysis, Regression, A/B tests}
+                \resumeSubItem{Management}
+        {Founded companies called 'Stainwash'(Retired) and 'Multidimensions'}
+
+        \resumeSubHeadingListEnd
+        
+        %
+        %--------PROGRAMMING SKILLS------------
+          %\section{Programming Skills}
+        %  \resumeSubHeadingListStart
+        %    \item{
+          %      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+          %      \hfill
+          %      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+          %    }
+        %  \resumeSubHeadingListEnd
+        
+        
+        %-------------------------------------------
+          \end{document}
+        
